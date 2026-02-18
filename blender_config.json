@@ -1,0 +1,78 @@
+{
+  "handbookTitle": "Blender 4.0 Essentials",
+  "themeColors": {
+    "bgColor": "bg-gray-800",
+    "tintColor": "text-orange-500",
+    "mainColor": "text-gray-100"
+  },
+  "iconLibrary": {
+    "cube": "cube-svg",
+    "camera": "camera-svg",
+    "light": "light-svg",
+    "bone": "bone-svg",
+    "render": "render-svg"
+  },
+  "pages": [
+    {
+      "id": "splash",
+      "title": "Blender 4.0",
+      "subTitle": "The open source 3D creation pipeline. Modeling, rigging, animation, simulation, rendering, compositing and motion tracking.",
+      "pageType": "bigTitle",
+      "showInNavShortcut": false,
+      "pageNumber": 1,
+      "topicGroup": "Intro",
+      "callToAction": {
+        "text": "Open Viewport",
+        "icon": "cube"
+      }
+    },
+    {
+      "id": "modules",
+      "title": "Core Modules",
+      "pageType": "cards",
+      "showInNavShortcut": true,
+      "pageNumber": 2,
+      "topicGroup": "Workflow",
+      "cards": [
+        { "title": "Modeling", "subTitle": "Hard surface and organic mesh creation", "icon": "cube", "selectable": true },
+        { "title": "Sculpting", "subTitle": "Digital clay workflow", "icon": "user", "selectable": true },
+        { "title": "Animation", "subTitle": "Keyframes and graph editor", "icon": "camera", "selectable": true },
+        { "title": "Rendering", "subTitle": "Cycles and Eevee engines", "icon": "render", "selectable": true }
+      ]
+    },
+    {
+      "id": "shortcuts",
+      "title": "Essential Hotkeys",
+      "pageType": "master-bullets",
+      "showInNavShortcut": true,
+      "pageNumber": 3,
+      "topicGroup": "Workflow",
+      "master": {
+        "title": "Speed Workflow",
+        "subTitle": "Blender relies heavily on keyboard shortcuts. Master these to work at the speed of thought.",
+        "icon": "light"
+      },
+      "bulletsTitle": "Top 3 Keys",
+      "bullets": [
+        { "title": "G (Grab)", "subTitle": "Move selected objects or vertices", "icon": "cube" },
+        { "title": "R (Rotate)", "subTitle": "Rotate selection around pivot point", "icon": "cube" },
+        { "title": "S (Scale)", "subTitle": "Resize selection", "icon": "cube" }
+      ]
+    },
+    {
+      "id": "render_pipeline",
+      "title": "Render Pipeline",
+      "pageType": "roleMapping",
+      "showInNavShortcut": true,
+      "pageNumber": 4,
+      "topicGroup": "Production",
+      "roles": [
+        { "id": "model", "title": "3D Asset", "subTitle": "Mesh Data", "side": "left", "mapTo": ["material", "rig"] },
+        { "id": "material", "title": "Shaders", "subTitle": "BSDF Nodes", "side": "right", "mapTo": ["render"] },
+        { "id": "rig", "title": "Armature", "subTitle": "Bones", "side": "right", "mapTo": ["anim"] },
+        { "id": "anim", "title": "Animation", "subTitle": "Action Strip", "side": "left", "mapTo": ["render"] },
+        { "id": "render", "title": "Final Image", "subTitle": "PNG/EXR", "side": "right", "mapTo": [] }
+      ]
+    }
+  ]
+}

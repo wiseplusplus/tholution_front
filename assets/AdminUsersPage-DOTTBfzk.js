@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as n,a as o}from"./index-BnoIOtV8.js";const a={},r={class:"p-8"};function c(d,e){return t(),n("div",r,[...e[0]||(e[0]=[o("h1",{class:"text-2xl font-bold mb-4"},"Admin: User Management",-1)])])}const l=s(a,[["render",c]]);export{l as default};

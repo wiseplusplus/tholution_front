@@ -1,0 +1,87 @@
+{
+  "handbookTitle": "Liftoff Mobile Growth",
+  "themeColors": {
+    "bgColor": "bg-slate-900",
+    "tintColor": "text-green-400",
+    "mainColor": "text-white"
+  },
+  "iconLibrary": {
+    "rocket": "rocket-svg",
+    "chart": "chart-svg",
+    "target": "target-svg",
+    "users": "users-svg",
+    "settings": "settings-svg",
+    "help": "help-svg"
+  },
+  "pages": [
+    {
+      "id": "intro",
+      "title": "Liftoff Monetize & UA",
+      "subTitle": "Scale your mobile app user base with precision targeting and machine learning.",
+      "pageType": "bigTitle",
+      "showInNavShortcut": false,
+      "pageNumber": 1,
+      "topicGroup": "Intro",
+      "callToAction": {
+        "text": "Start Growth Engine",
+        "icon": "rocket"
+      }
+    },
+    {
+      "id": "channels",
+      "title": "Acquisition Channels",
+      "pageType": "cards",
+      "showInNavShortcut": true,
+      "pageNumber": 2,
+      "topicGroup": "Strategy",
+      "cards": [
+        { "title": "Direct Buying", "subTitle": "High-quality inventory direct from publishers", "icon": "target" },
+        { "title": "Programmatic DSP", "subTitle": "Real-time bidding across major exchanges", "icon": "chart" },
+        { "title": "Social Influencers", "subTitle": "Organic reach through content creators", "icon": "users" }
+      ]
+    },
+    {
+      "id": "roles",
+      "title": "Team Roles",
+      "subTitle": "Who manages what in a UA campaign?",
+      "pageType": "roleMapping",
+      "showInNavShortcut": true,
+      "pageNumber": 3,
+      "topicGroup": "Strategy",
+      "roles": [
+        { "id": "ua_mgr", "title": "UA Manager", "subTitle": "Campaign Strategy", "side": "left", "mapTo": ["dashboard", "reporting"] },
+        { "id": "creative", "title": "Creative Lead", "subTitle": "Ad Assets", "side": "left", "mapTo": ["assets"] },
+        { "id": "dashboard", "title": "Liftoff Dashboard", "subTitle": "Campaign Management", "side": "right", "mapTo": [] },
+        { "id": "reporting", "title": "Analytics Portal", "subTitle": "Performance Data", "side": "right", "mapTo": [] },
+        { "id": "assets", "title": "Creative Lab", "subTitle": "A/B Testing", "side": "right", "mapTo": [] }
+      ]
+    },
+    {
+      "id": "kpis",
+      "title": "Key Performance Indicators",
+      "pageType": "wordCloud",
+      "showInNavShortcut": true,
+      "pageNumber": 4,
+      "topicGroup": "Metrics",
+      "wordGroups": [
+        {
+          "name": "Cost Metrics",
+          "words": [
+            { "text": "CPI", "role": "biz", "link": { "pageNumber": 2 } },
+            { "text": "CPM", "role": "biz", "link": { "pageNumber": 2 } },
+            { "text": "CPC", "role": "biz", "link": { "pageNumber": 2 } }
+          ]
+        },
+        {
+          "name": "Quality Metrics",
+          "words": [
+            { "text": "ROAS", "role": "all", "link": { "pageNumber": 3 } },
+            { "text": "LTV", "role": "all", "link": { "pageNumber": 3 } },
+            { "text": "Retention D1", "role": "dev", "link": { "pageNumber": 3 } },
+            { "text": "Retention D7", "role": "dev", "link": { "pageNumber": 3 } }
+          ]
+        }
+      ]
+    }
+  ]
+}

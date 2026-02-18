@@ -1,0 +1,925 @@
+{
+  "handbookTitle": "Appcharge Onboarding",
+  "themeColors": {
+    "bgColor": "bg-slate-50",
+    "tintColor": "text-blue-600",
+    "mainColor": "text-slate-900"
+  },
+  "iconLibrary": {
+    "arrowDown": "arrow-down-svg-path",
+    "target": "target-svg-path",
+    "gradCap": "grad-cap-svg-path",
+    "layout": "layout-svg-path",
+    "code": "code-svg-path",
+    "fileText": "file-text-svg-path",
+    "book": "book-svg-path",
+    "cart": "shopping-cart-svg-path",
+    "card": "credit-card-svg-path",
+    "link": "link-svg-path",
+    "check": "check-circle-svg-path",
+    "user": "user-svg-path",
+    "gamepad": "gamepad-svg-path",
+    "help": "help-circle-svg-path",
+    "award": "award-svg-path",
+    "msg": "message-circle-svg-path"
+  },
+  "pages": [
+    {
+      "id": "slide1",
+      "title": "Appcharge FPS Onboarding Training",
+      "subTitle": "Master the Appcharge alternative payment ecosystem through an immersive, interactive learning experience.",
+      "pageType": "bigTitle",
+      "showInNavShortcut": false,
+      "pageNumber": 1,
+      "topicGroup": "General",
+      "callToAction": {
+        "text": "Scroll to start",
+        "icon": "arrowDown"
+      }
+    },
+    {
+      "id": "slide2",
+      "title": "High-level Process",
+      "pageType": "cards",
+      "showInNavShortcut": false,
+      "pageNumber": 2,
+      "topicGroup": "General",
+      "cards": [
+        { "title": "Product Introduction", "subTitle": "Understanding the core value proposition", "icon": "target" },
+        { "title": "Training Goals", "subTitle": "What you will achieve today", "icon": "gradCap" },
+        { "title": "Dashboard Training", "subTitle": "Deep dive into the management console", "icon": "layout" },
+        { "title": "Technical Integration", "subTitle": "Step-by-step developer guide", "icon": "code" },
+        { "title": "Quizzes & Certification", "subTitle": "Test your knowledge", "icon": "fileText" },
+        { "title": "Resources", "subTitle": "Documentation and support", "icon": "book" }
+      ]
+    },
+    {
+      "id": "slide3",
+      "title": "Choose Your Path",
+      "subTitle": "Select the product you are most interested in exploring. This will customize some examples throughout the training.",
+      "pageType": "cards",
+      "showInNavShortcut": true,
+      "pageNumber": 3,
+      "topicGroup": "General",
+      "cards": [
+        {
+          "title": "Webstore",
+          "subTitle": "Complete web shop solution hosted by Appcharge.",
+          "icon": "cart",
+          "selectable": true,
+          "features": ["No coding required", "Custom branding", "Instant setup"]
+        },
+        {
+          "title": "Checkout",
+          "subTitle": "Embeddable checkout for your existing game or site.",
+          "icon": "card",
+          "selectable": true,
+          "features": ["Seamless integration", "High conversion", "Global methods"]
+        },
+        {
+          "title": "Payment Link",
+          "subTitle": "Simple generated links for direct payments.",
+          "icon": "link",
+          "selectable": true,
+          "features": ["Quick sales"]
+        }
+      ]
+    },
+    {
+      "id": "slide4",
+      "title": "Target of this Onboard Training",
+      "pageType": "master-bullets",
+      "showInNavShortcut": true,
+      "pageNumber": 4,
+      "topicGroup": "General",
+      "master": {
+        "title": "First Person Style (FPS)",
+        "subTitle": "Just like you are in the first person perspective when hands-on integrating the product. We are in the same team, learning by doing together. An immersive experience.",
+        "icon": "gamepad"
+      },
+      "bulletsTitle": "After this training, you will have:",
+      "bullets": [
+        {
+          "title": "Imaginable Context",
+          "subTitle": "Clear mental model of screens, layouts, concepts, and features.",
+          "icon": "check"
+        },
+        {
+          "title": "Terminology Mastery",
+          "subTitle": "Understand all key terms relevant to your role.",
+          "icon": "fileText"
+        },
+        {
+          "title": "Resource Readiness",
+          "subTitle": "Access to all necessary links, files, contacts, and checklists.",
+          "icon": "user"
+        }
+      ]
+    },
+    {
+      "id": "slide5",
+      "title": "Roles & Products Mapping",
+      "subTitle": "Understanding who needs to know what.",
+      "pageType": "roleMapping",
+      "showInNavShortcut": true,
+      "pageNumber": 5,
+      "topicGroup": "General",
+      "roles": [
+        { "id": "dashboard", "title": "Dashboard", "subTitle": "Management Console", "side": "left", "mapTo": ["operator", "designer", "dev"] },
+        { "id": "tech-integration", "title": "Technical Integration", "subTitle": "Code & API", "side": "left", "mapTo": ["dev"] },
+        { "id": "operator", "title": "Operators", "subTitle": "Config & Analytics", "side": "right", "mapTo": [] },
+        { "id": "designer", "title": "Designers", "subTitle": "Product & Webstore", "side": "right", "mapTo": [] },
+        { "id": "dev", "title": "Developers", "subTitle": "Implementation", "side": "right", "mapTo": [] }
+      ]
+    },
+    {
+      "id": "slide6",
+      "title": "Dashboard Overview",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 6,
+      "topicGroup": "Dashboard",
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Sidebar Navigation",
+          "concept": { "title": "Main Navigation Area", "description": "Access different modules like Management, Studio, and Analytics." },
+          "keywords": ["Navigation", "Modules", "Menu"],
+          "link": { "text": "Docs", "url": "https://docs.appcharge.com" },
+          "x": 10, "y": 0, "width": 18, "height": 100
+        },
+        {
+          "headerTitle": "Top Bar",
+          "concept": { "title": "Secondary navigation", "description": "Switch organizations, view notifications, and access user profile settings." },
+          "keywords": ["Navigation", "Settings"],
+          "link": { "text": "Docs", "url": "https://docs.appcharge.com" },
+          "x": 26, "y": 8, "width": 70, "height": 4
+        },
+        {
+          "headerTitle": "Management Area",
+          "concept": { "title": "Business Operations", "description": "Configure business rules, payment methods, and technical settings." },
+          "keywords": ["Settings", "Config", "Operations"],
+          "link": { "text": "Docs", "url": "https://docs.appcharge.com" },
+          "x": 10, "y": 10, "width": 18, "height": 30
+        },
+        {
+          "headerTitle": "Studio Area",
+          "concept": { "title": "Product Management", "description": "Manage assets, products, offers, and build the store layout." },
+          "keywords": ["Assets", "Products", "Builder"],
+          "link": { "text": "Docs", "url": "https://docs.appcharge.com" },
+          "x": 10, "y": 40, "width": 18, "height": 30
+        }
+      ]
+    },
+    {
+      "id": "slide7_ops",
+      "title": "Dashboard - Management",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 7,
+      "topicGroup": "Dashboard",
+      "groupId": "management",
+      "groupType": "tabs",
+      "contentTitle": "Business Operations",
+      "contentSubtitle": "Data and reports",
+      "orderInGroup": 1,
+      "image": "/assets/dashboard-biz.png",
+      "annotations": [
+        {
+          "headerTitle": "Order Management",
+          "concept": { "title": "Transaction History", "description": "View and manage customer orders, refunds, and disputes." },
+          "keywords": ["Orders", "Refunds", "Transactions"],
+          "link": { "text": "Docs", "url": "https://docs.appcharge.com" },
+          "x": 20, "y": 13, "width": 79, "height": 54
+        }
+      ]
+    },
+    {
+      "id": "slide7_config",
+      "title": "Dashboard - Management",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 7,
+      "topicGroup": "Dashboard",
+      "groupId": "management",
+      "groupType": "tabs",
+      "contentTitle": "Business Config",
+      "contentSubtitle": "Payment, Tax, Auth",
+      "orderInGroup": 2,
+      "image": "/assets/dashboard-biz-config.png",
+      "annotations": [
+        {
+          "headerTitle": "Business Config",
+          "concept": { "title": "Configurations related to business operations", "description": "Set up regional pricing, tax rules, and currency conversion." },
+          "keywords": ["Payment", "Tax", "Currencies", "Authorization"],
+          "x": 27, "y": 8, "width": 55, "height": 80
+        }
+      ]
+    },
+    {
+      "id": "slide7_tech",
+      "title": "Dashboard - Management",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 7,
+      "topicGroup": "Dashboard",
+      "groupId": "management",
+      "groupType": "tabs",
+      "contentTitle": "Technical Settings",
+      "contentSubtitle": "Code & API integration",
+      "orderInGroup": 3,
+      "image": "/assets/dashboard-integration-settings.png",
+      "annotations": [
+        {
+          "headerTitle": "Technical Settings",
+          "concept": { "title": "Integration, Keys, Endpoints", "description": "Manage API keys and secrets for integration." },
+          "keywords": ["API Key", "Secret", "Auth"],
+          "x": 25, "y": 6, "width": 50, "height": 90
+        }
+      ]
+    },
+    {
+      "id": "slide8_assets",
+      "title": "Studio",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 8,
+      "topicGroup": "Dashboard",
+      "groupId": "studio",
+      "groupType": "tabs",
+      "contentTitle": "Assets",
+      "contentSubtitle": "Images & Media",
+      "orderInGroup": 1,
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "Upload Assets",
+          "concept": { "title": "Media Management", "description": "Upload and organize images for products and store design." },
+          "keywords": ["Upload", "Library", "CDN"],
+          "x": 80, "y": 10, "width": 15, "height": 10
+        }
+      ]
+    },
+    {
+      "id": "slide8_products",
+      "title": "Studio",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 8,
+      "topicGroup": "Dashboard",
+      "groupId": "studio",
+      "groupType": "tabs",
+      "contentTitle": "Products",
+      "contentSubtitle": "Catalog Items",
+      "orderInGroup": 2,
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "SKU Management",
+          "concept": { "title": "Stock Keeping Unit", "description": "Define unique identifiers for your items." },
+          "keywords": ["SKU", "ID", "Inventory"],
+          "x": 10, "y": 20, "width": 20, "height": 10
+        }
+      ]
+    },
+    {
+      "id": "slide8_offers",
+      "title": "Studio",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 8,
+      "topicGroup": "Dashboard",
+      "groupId": "studio",
+      "groupType": "tabs",
+      "contentTitle": "Offers",
+      "contentSubtitle": "Bundles & Sales",
+      "orderInGroup": 3,
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "User Segmentation",
+          "concept": { "title": "Targeting", "description": "Target specific offers to player segments (e.g., Whales, New Users)." },
+          "keywords": ["Segments", "Targeting", "Personalization"],
+          "x": 60, "y": 30, "width": 30, "height": 40
+        }
+      ]
+    },
+    {
+      "id": "slide8_badges",
+      "title": "Studio",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 8,
+      "topicGroup": "Dashboard",
+      "groupId": "studio",
+      "groupType": "tabs",
+      "contentTitle": "Badges",
+      "contentSubtitle": "Visual Tags",
+      "orderInGroup": 4,
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "Visual Badges",
+          "concept": { "title": "Marketing", "description": "Create badges like 'Best Value' or 'Hot' to attach to products." },
+          "keywords": ["Badges", "Tags", "Marketing"],
+          "x": 30, "y": 30, "width": 40, "height": 40
+        }
+      ]
+    },
+    {
+      "id": "slide8_builder",
+      "title": "Studio",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 8,
+      "topicGroup": "Dashboard",
+      "groupId": "studio",
+      "groupType": "tabs",
+      "contentTitle": "The Builder",
+      "contentSubtitle": "Store Layout",
+      "orderInGroup": 5,
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "Visual Editor",
+          "concept": { "title": "WYSIWYG", "description": "Drag and drop components to design your webstore." },
+          "keywords": ["Builder", "Layout", "Design"],
+          "x": 20, "y": 20, "width": 60, "height": 60
+        }
+      ]
+    },
+    {
+      "id": "slide9_prepare",
+      "title": "Payment Integration - Prepare",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 9,
+      "topicGroup": "Tech Integration",
+      "groupId": "tech-integration",
+      "groupType": "steps",
+      "contentTitle": "Prepare",
+      "contentSubtitle": "Prepare user and item data",
+      "orderInGroup": 1,
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "Install SDK",
+          "concept": { "title": "Dependency", "description": "npm install @appcharge/checkout" },
+          "keywords": ["npm", "install", "sdk"],
+          "x": 10, "y": 20, "width": 80, "height": 20
+        },
+        {
+          "headerTitle": "Import",
+          "concept": { "title": "ES Modules", "description": "import { Appcharge } from \"@appcharge/checkout\"" },
+          "keywords": ["import", "module"],
+          "x": 10, "y": 50, "width": 80, "height": 20
+        }
+      ]
+    },
+    {
+      "id": "slide10_auth",
+      "title": "Payment Integration - Authenticate",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 10,
+      "topicGroup": "Tech Integration",
+      "groupId": "tech-integration",
+      "groupType": "steps",
+      "contentTitle": "Authenticate",
+      "contentSubtitle": "Create session",
+      "orderInGroup": 2,
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "Backend Call",
+          "concept": { "title": "Server-side Auth", "description": "Always generate tokens on your server, never on client." },
+          "keywords": ["Security", "Backend", "Token"],
+          "x": 10, "y": 10, "width": 80, "height": 30
+        },
+        {
+          "headerTitle": "Handshake",
+          "concept": { "title": "Session Init", "description": "const { sessionToken } = await api.createSession(orderData)" },
+          "keywords": ["Session", "Handshake", "Order"],
+          "x": 10, "y": 50, "width": 80, "height": 30
+        }
+      ]
+    },
+    {
+      "id": "slide11_trigger",
+      "title": "Payment Integration - Trigger Payment",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 11,
+      "topicGroup": "Tech Integration",
+      "groupId": "tech-integration",
+      "groupType": "steps",
+      "contentTitle": "Trigger Payment",
+      "contentSubtitle": "Purchase request",
+      "orderInGroup": 3,
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "Purchase request",
+          "concept": { "title": "SDK Method", "description": "appcharge.checkout({ sessionToken })" },
+          "keywords": ["Checkout", "UI", "Modal"],
+          "x": 10, "y": 30, "width": 80, "height": 40
+        }
+      ]
+    },
+    {
+      "id": "slide12_result",
+      "title": "Payment Integration - Handle Result",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 12,
+      "topicGroup": "Tech Integration",
+      "groupId": "tech-integration",
+      "groupType": "steps",
+      "contentTitle": "Handle Result",
+      "contentSubtitle": "Success/Fail",
+      "orderInGroup": 4,
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "Success Handler",
+          "concept": { "title": "Promise Resolve", "description": ".then((result) => { console.log(\"Payment Successful\") })" },
+          "keywords": ["Success", "Callback", "Promise"],
+          "x": 10, "y": 20, "width": 80, "height": 20
+        },
+        {
+          "headerTitle": "Error Handling",
+          "concept": { "title": "Promise Reject", "description": ".catch((error) => { console.error(\"Payment Failed\", error) })" },
+          "keywords": ["Error", "Catch", "Fail"],
+          "x": 10, "y": 60, "width": 80, "height": 20
+        }
+      ]
+    },
+    {
+      "id": "slide13",
+      "title": "Testing: Correct Integration Data",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 13,
+      "topicGroup": "Go Live",
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Healthy Revenue Trend",
+          "concept": { "title": "Integration Success", "description": "Consistent revenue flow indicates successful checkout integration and payment processing." },
+          "keywords": ["Revenue", "Growth", "Stability"],
+          "x": 5, "y": 15, "width": 60, "height": 35
+        },
+        {
+          "headerTitle": "High Auth Rate",
+          "concept": { "title": "Payment Health", "description": "Authorization rates above 90% typically signal correct configuration of payment methods." },
+          "keywords": ["Auth Rate", "Conversion", "Success"],
+          "x": 70, "y": 15, "width": 25, "height": 20
+        },
+        {
+          "headerTitle": "Valid Transactions",
+          "concept": { "title": "Data Accuracy", "description": "Recent transaction log shows 'Completed' status with correct currencies and amounts." },
+          "keywords": ["Transactions", "Completed", "Logs"],
+          "x": 5, "y": 55, "width": 90, "height": 40
+        }
+      ]
+    },
+    {
+      "id": "slide14_zero",
+      "title": "Integrations with a problem",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 14,
+      "topicGroup": "Go Live",
+      "groupId": "issues",
+      "groupType": "tabs",
+      "contentTitle": "Zero Revenue",
+      "contentSubtitle": "Critical Failure",
+      "orderInGroup": 1,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "The Flatline",
+          "concept": { "title": "Broken Integration", "description": "Traffic is visible but Revenue is flat at 0. This visual pattern indicates the checkout is not loading or payments are blocked." },
+          "keywords": ["0 Revenue", "No Orders", "Critical"],
+          "x": 5, "y": 15, "width": 60, "height": 35
+        }
+      ]
+    },
+    {
+      "id": "slide14_failures",
+      "title": "Integrations with a problem",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 14,
+      "topicGroup": "Go Live",
+      "groupId": "issues",
+      "groupType": "tabs",
+      "contentTitle": "High Failure Rate",
+      "contentSubtitle": "Configuration Mismatch",
+      "orderInGroup": 2,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "The Red Sea",
+          "concept": { "title": "Configuration Error", "description": "Transaction log is filled with red 'Failed' entries. Indicates correct initiation but rejection due to currency, region, or fraud rules." },
+          "keywords": ["Failed", "Declined", "Red Logs"],
+          "x": 5, "y": 55, "width": 90, "height": 40
+        }
+      ]
+    },
+    {
+      "id": "slide15",
+      "title": "Live Dashboard - Key Metrics",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 15,
+      "topicGroup": "Go Live",
+      "image": "https://placehold.co/1200x675/EEE/31343C",
+      "annotations": [
+        {
+          "headerTitle": "Total Revenue",
+          "concept": { "title": "Key Metric", "description": "Monitor your Gross Transaction Value (GTV) in real-time." },
+          "keywords": ["Revenue", "GTV", "Sales"],
+          "x": 10, "y": 10, "width": 30, "height": 20
+        },
+        {
+          "headerTitle": "Conversion Rate",
+          "concept": { "title": "Performance", "description": "Track how many visitors complete a purchase." },
+          "keywords": ["Conversion", "Funnel", "Rate"],
+          "x": 50, "y": 10, "width": 30, "height": 20
+        }
+      ]
+    },
+    {
+      "id": "slide16_q1",
+      "title": "Final Quiz: Master the Platform",
+      "pageType": "labeled",
+      "showInNavShortcut": true,
+      "pageNumber": 16,
+      "topicGroup": "Completion",
+      "groupId": "quiz",
+      "groupType": "tabs",
+      "contentTitle": "Q1: First Step",
+      "orderInGroup": 1,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Publisher Dashboard",
+          "concept": { "title": "Setup", "description": "Setting up the Publisher Dashboard is the first required step for all Appcharge solutions." },
+          "keywords": ["Dashboard", "Setup", "First Step"],
+          "x": 5, "y": 10, "width": 20, "height": 60
+        }
+      ]
+    },
+    {
+      "id": "slide16_q2",
+      "title": "Final Quiz: Master the Platform",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 16,
+      "topicGroup": "Completion",
+      "groupId": "quiz",
+      "groupType": "tabs",
+      "contentTitle": "Q2: Environments",
+      "orderInGroup": 2,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Sandbox vs Live",
+          "concept": { "title": "Environments", "description": "Always use Sandbox for development and testing before switching to the Live environment." },
+          "keywords": ["Sandbox", "Live", "Testing"],
+          "x": 80, "y": 5, "width": 15, "height": 10
+        }
+      ]
+    },
+    {
+      "id": "slide16_q3",
+      "title": "Final Quiz: Master the Platform",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 16,
+      "topicGroup": "Completion",
+      "groupId": "quiz",
+      "groupType": "tabs",
+      "contentTitle": "Q3: Client Auth",
+      "orderInGroup": 3,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Public Key",
+          "concept": { "title": "Client-Side", "description": "Use the Public Key for initializing the SDK on the frontend (client-side)." },
+          "keywords": ["Public Key", "Frontend", "SDK"],
+          "x": 30, "y": 20, "width": 40, "height": 30
+        }
+      ]
+    },
+    {
+      "id": "slide16_q4",
+      "title": "Final Quiz: Master the Platform",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 16,
+      "topicGroup": "Completion",
+      "groupId": "quiz",
+      "groupType": "tabs",
+      "contentTitle": "Q4: Server Auth",
+      "orderInGroup": 4,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Secret Key",
+          "concept": { "title": "Server-Side", "description": "The Secret Key must be kept secure and used only for server-to-server API calls." },
+          "keywords": ["Secret Key", "Backend", "Security"],
+          "x": 30, "y": 50, "width": 40, "height": 30
+        }
+      ]
+    },
+    {
+      "id": "slide16_q5",
+      "title": "Final Quiz: Master the Platform",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 16,
+      "topicGroup": "Completion",
+      "groupId": "quiz",
+      "groupType": "tabs",
+      "contentTitle": "Q5: Events",
+      "orderInGroup": 5,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Webhooks",
+          "concept": { "title": "Sync", "description": "Listen to Webhook events to sync payment statuses (e.g., payment.succeeded) with your backend." },
+          "keywords": ["Webhooks", "Events", "Sync"],
+          "x": 10, "y": 40, "width": 80, "height": 30
+        }
+      ]
+    },
+    {
+      "id": "slide16_q6",
+      "title": "Final Quiz: Master the Platform",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 16,
+      "topicGroup": "Completion",
+      "groupId": "quiz",
+      "groupType": "tabs",
+      "contentTitle": "Q6: Store Design",
+      "orderInGroup": 6,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "No-Code Studio",
+          "concept": { "title": "Design", "description": "Use the Studio to build and customize your webstore without writing code." },
+          "keywords": ["Studio", "No-Code", "Customization"],
+          "x": 5, "y": 40, "width": 20, "height": 30
+        }
+      ]
+    },
+    {
+      "id": "slide16_q7",
+      "title": "Final Quiz: Master the Platform",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 16,
+      "topicGroup": "Completion",
+      "groupId": "quiz",
+      "groupType": "tabs",
+      "contentTitle": "Q7: Optimization",
+      "orderInGroup": 7,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Analytics & A/B",
+          "concept": { "title": "Growth", "description": "Use Dashboard Analytics to track LTV and run A/B tests on pricing and offers." },
+          "keywords": ["Analytics", "LTV", "A/B Test"],
+          "x": 70, "y": 20, "width": 25, "height": 40
+        }
+      ]
+    },
+    {
+      "id": "slide16_q8",
+      "title": "Final Quiz: Master the Platform",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 16,
+      "topicGroup": "Completion",
+      "groupId": "quiz",
+      "groupType": "tabs",
+      "contentTitle": "Q8: Global Reach",
+      "orderInGroup": 8,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Local Payment Methods",
+          "concept": { "title": "Payments", "description": "Appcharge automatically handles local payment methods (LPMs) for global coverage." },
+          "keywords": ["LPMs", "Global", "Payments"],
+          "x": 25, "y": 25, "width": 50, "height": 50
+        }
+      ]
+    },
+    {
+      "id": "slide16_q9",
+      "title": "Final Quiz: Master the Platform",
+      "pageType": "labeled",
+      "showInNavShortcut": false,
+      "pageNumber": 16,
+      "topicGroup": "Completion",
+      "groupId": "quiz",
+      "groupType": "tabs",
+      "contentTitle": "Q9: Live Ops",
+      "orderInGroup": 9,
+      "image": "/assets/dashboard-overview.png",
+      "annotations": [
+        {
+          "headerTitle": "Real-time Monitoring",
+          "concept": { "title": "Operations", "description": "Monitor Live Alerts and traffic in real-time to ensure system health during launches." },
+          "keywords": ["Monitoring", "Alerts", "Real-time"],
+          "x": 40, "y": 10, "width": 30, "height": 20
+        }
+      ]
+    },
+    {
+      "id": "slide17",
+      "title": "Q & A",
+      "subTitle": "We've covered a lot! What questions do you have?",
+      "pageType": "bigTitle",
+      "showInNavShortcut": true,
+      "pageNumber": 17,
+      "topicGroup": "Completion",
+      "callToAction": {
+        "text": "Please type your questions in the chat or ask directly.",
+        "icon": "msg"
+      }
+    },
+    {
+      "id": "slide_keywords",
+      "title": "Concept Cloud",
+      "subTitle": "Comprehensive index of all Appcharge terminology.",
+      "pageType": "wordCloud",
+      "showInNavShortcut": true,
+      "pageNumber": 18,
+      "topicGroup": "Completion",
+      "wordGroups": [
+        {
+          "name": "Fundamentals",
+          "words": [
+            { "text": "Publisher Dashboard", "role": "all", "link": { "pageNumber": 6 } },
+            { "text": "Sandbox Environment", "role": "dev", "link": { "pageNumber": 10 } },
+            { "text": "Live Environment", "role": "all", "link": { "pageNumber": 15 } },
+            { "text": "Organization ID", "role": "dev", "link": { "pageNumber": 6 } },
+            { "text": "User Roles", "role": "biz", "link": { "pageNumber": 5 } },
+            { "text": "Permissions", "role": "biz", "link": { "pageNumber": 5 } },
+            { "text": "Project Settings", "role": "all", "link": { "pageNumber": 7 } },
+            { "text": "API Keys", "role": "dev", "link": { "pageNumber": 10 } }
+          ]
+        },
+        {
+          "name": "Checkout Integration",
+          "words": [
+            { "text": "Client SDK", "role": "dev", "link": { "pageNumber": 9 } },
+            { "text": "Public Key", "role": "dev", "link": { "pageNumber": 10 } },
+            { "text": "Secret Key", "role": "dev", "link": { "pageNumber": 10 } },
+            { "text": "Session Token", "role": "dev", "link": { "pageNumber": 10 } },
+            { "text": "checkout.init()", "role": "dev", "link": { "pageNumber": 11 } },
+            { "text": "Handshake", "role": "dev", "link": { "pageNumber": 11 } },
+            { "text": "CORS", "role": "dev", "link": { "pageNumber": 14 } },
+            { "text": "User ID", "role": "dev", "link": { "pageNumber": 9 } },
+            { "text": "Metadata", "role": "dev", "link": { "pageNumber": 9 } },
+            { "text": "Currency Code", "role": "dev", "link": { "pageNumber": 9 } }
+          ]
+        },
+        {
+          "name": "Backend & Security",
+          "words": [
+            { "text": "Webhooks", "role": "dev", "link": { "pageNumber": 12 } },
+            { "text": "Signature Verification", "role": "dev", "link": { "pageNumber": 10 } },
+            { "text": "HMAC-SHA256", "role": "dev", "link": { "pageNumber": 10 } },
+            { "text": "Idempotency", "role": "dev", "link": { "pageNumber": 12 } },
+            { "text": "Server-to-Server", "role": "dev", "link": { "pageNumber": 10 } },
+            { "text": "IP Whitelist", "role": "dev", "link": { "pageNumber": 14 } },
+            { "text": "Retry Logic", "role": "dev", "link": { "pageNumber": 14 } },
+            { "text": "Event Logs", "role": "dev", "link": { "pageNumber": 13 } },
+            { "text": "payment.succeeded", "role": "dev", "link": { "pageNumber": 12 } },
+            { "text": "payment.failed", "role": "dev", "link": { "pageNumber": 12 } }
+          ]
+        },
+        {
+          "name": "Store Management",
+          "words": [
+            { "text": "Studio", "role": "biz", "link": { "pageNumber": 8 } },
+            { "text": "No-Code Builder", "role": "biz", "link": { "pageNumber": 8 } },
+            { "text": "Assets Library", "role": "biz", "link": { "pageNumber": 8 } },
+            { "text": "Offer Management", "role": "biz", "link": { "pageNumber": 8 } },
+            { "text": "Bundles", "role": "biz", "link": { "pageNumber": 8 } },
+            { "text": "Price Points", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Localization", "role": "biz", "link": { "pageNumber": 8 } },
+            { "text": "Segments", "role": "biz", "link": { "pageNumber": 8 } },
+            { "text": "Coupons", "role": "biz", "link": { "pageNumber": 8 } },
+            { "text": "Store URL", "role": "all", "link": { "pageNumber": 8 } }
+          ]
+        },
+        {
+          "name": "Payments & Global",
+          "words": [
+            { "text": "LPMs (Local Methods)", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Credit Cards", "role": "all", "link": { "pageNumber": 2 } },
+            { "text": "Digital Wallets", "role": "all", "link": { "pageNumber": 2 } },
+            { "text": "Merchant of Record", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Tax Handling", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "VAT / GST", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Refunds", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Chargebacks", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Processing Fee", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Payouts", "role": "biz", "link": { "pageNumber": 7 } }
+          ]
+        },
+        {
+          "name": "Analytics & Optimization",
+          "words": [
+            { "text": "Dashboard Analytics", "role": "biz", "link": { "pageNumber": 6 } },
+            { "text": "LTV (Lifetime Value)", "role": "biz", "link": { "pageNumber": 6 } },
+            { "text": "ARPU", "role": "biz", "link": { "pageNumber": 6 } },
+            { "text": "Conversion Rate", "role": "biz", "link": { "pageNumber": 13 } },
+            { "text": "Auth Rate", "role": "biz", "link": { "pageNumber": 13 } },
+            { "text": "A/B Testing", "role": "biz", "link": { "pageNumber": 8 } },
+            { "text": "Funnel Analysis", "role": "biz", "link": { "pageNumber": 6 } },
+            { "text": "Retention", "role": "biz", "link": { "pageNumber": 6 } },
+            { "text": "Churn", "role": "biz", "link": { "pageNumber": 6 } },
+            { "text": "Live Alerts", "role": "dev", "link": { "pageNumber": 15 } }
+          ]
+        },
+        {
+          "name": "Risk & Compliance",
+          "words": [
+            { "text": "Fraud Rules", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Risk Score", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Blocklist", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "Allowlist", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "3D Secure", "role": "dev", "link": { "pageNumber": 11 } },
+            { "text": "GDPR", "role": "biz", "link": { "pageNumber": 7 } },
+            { "text": "PCI DSS", "role": "dev", "link": { "pageNumber": 7 } },
+            { "text": "Velocity Limits", "role": "biz", "link": { "pageNumber": 7 } }
+          ]
+        },
+        {
+          "name": "Troubleshooting",
+          "words": [
+            { "text": "401 Unauthorized", "role": "dev", "link": { "pageNumber": 14 } },
+            { "text": "400 Bad Request", "role": "dev", "link": { "pageNumber": 14 } },
+            { "text": "500 Server Error", "role": "dev", "link": { "pageNumber": 14 } },
+            { "text": "Timeout", "role": "dev", "link": { "pageNumber": 14 } },
+            { "text": "Network Tab", "role": "dev", "link": { "pageNumber": 14 } },
+            { "text": "Console Logs", "role": "dev", "link": { "pageNumber": 14 } },
+            { "text": "Support Ticket", "role": "all", "link": { "pageNumber": 19 } },
+            { "text": "Status Page", "role": "all", "link": { "pageNumber": 15 } }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slide18",
+      "title": "Frequently Asked Questions",
+      "pageType": "list",
+      "showInNavShortcut": true,
+      "pageNumber": 19,
+      "topicGroup": "Completion",
+      "itemStyle": "collapsible",
+      "items": [
+        { "title": "Can I customize the look and feel of the checkout?", "description": "Yes, you can fully customize colors, fonts, and logos in the Dashboard Studio." },
+        { "title": "How do I handle refunds?", "description": "Refunds can be initiated directly from the Management -> Orders section in the dashboard." },
+        { "title": "Is the SDK compatible with React/Vue/Angular?", "description": "Yes, the SDK is framework-agnostic and works with any JavaScript framework." },
+        { "title": "What payment methods are supported?", "description": "We support over 100 global payment methods including Credit Cards, PayPal, Apple Pay, and Google Pay." },
+        { "title": "How secure is the integration?", "description": "Appcharge is PCI-DSS Level 1 certified. We handle all sensitive payment data." }
+      ]
+    },
+    {
+      "id": "slide19",
+      "title": "Resources & Next Steps",
+      "pageType": "cards",
+      "showInNavShortcut": true,
+      "pageNumber": 20,
+      "topicGroup": "Completion",
+      "cards": [
+        {
+          "title": "Documentation",
+          "subTitle": "Full API references, guides, and tutorials.",
+          "icon": "book",
+          "link": { "text": "Docs", "url": "https://docs.appcharge.com" }
+        },
+        {
+          "title": "Post Integration Support",
+          "subTitle": "Contact the support team for on post-integration issues.",
+          "icon": "help"
+        },
+        {
+          "title": "Get Certified",
+          "subTitle": "Complete the final assessment to earn your Appcharge FPS Integration Specialist certificate.",
+          "icon": "award",
+          "variant": "wide",
+          "link": { "text": "Start Certification Quiz", "url": "https://docs.appcharge.com/guides/introduction" }
+        }
+      ]
+    }
+  ]
+}

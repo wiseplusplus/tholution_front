@@ -1,0 +1,1 @@
+import{_ as e,o,c as s,a as n}from"./index-BnoIOtV8.js";const r={},a={class:"p-8"};function c(d,t){return o(),s("div",a,[...t[0]||(t[0]=[n("h1",{class:"text-2xl font-bold mb-4"},"Content Editor",-1)])])}const l=e(r,[["render",c]]);export{l as default};
